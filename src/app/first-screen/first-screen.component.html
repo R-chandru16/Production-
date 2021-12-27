@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+
+    <body>
+        <form [formGroup]="mygroup" (ngSubmit)="onSubmit()" enctype="multipart/form-data">
+            <input type="file" (change)="handleFileInput($event)" [formControl]="file">
+            <button type="submit">Submit</button>
+            <img [src]="imageToShow" [id]="style">
+        </form>
+        <button type="button" (click)="getBar()" [id]="ss">Bar Graph</button>
+        <button type="button" (click)="getPie()" [id]="ss"> Pie Chart</button>
+        <button type="button" (click)="getHist()" [id]="ss">Histogram Chart</button>
+        
+    </body>
+    
+</html>
